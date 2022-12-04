@@ -1,0 +1,106 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+body{
+    color:#000000;
+    background-color: rgb(255, 255, 255);
+}
+
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-wrap: wrap;
+    padding-top: 50px;
+   
+    
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(3, 0, 0);
+    font-size: 24px;
+    color: #ff004f;
+    position: relative;
+}
+nav ul li a::after
+{
+    content:'';
+    width: 0;
+    height: 3px;
+   
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+img
+{
+    width: 400px;
+    border-radius: 50%;
+    margin-top: 40px;
+}
+
+#home
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#home img
+{
+    justify-content:flex-end ;
+}
+#home .details
+{
+    font-size: 50px;
+}
+#home .details span{
+    color: #ff004f;
+}
+#home .details  p{
+    font-size: 20px;
+    padding-top: 20px;
+    font-weight: 0;
+}
+#skills
+{
+    margin-top: 50px;
+    color: #000000;
+
+}
+#contact
+{
+    margin-top: 100px;
+}
+#contact a img{
+    width: 90px;
+    padding: 10px;
+    border-radius: 20px;
+   
+}
+#projects
+{
+    margin-top: 50px;
+}
+h5{
+    color: rgb(210, 42, 70);
+}
+#text{
+    padding-left: 20px;
+}
